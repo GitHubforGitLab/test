@@ -4,6 +4,7 @@ metadata:
   name: nginx
   namespace: test
 spec:
-  containers:
-  - name: nginx
-    image: nginx:latest
+  spec:
+    containers:
+    - name: nginx
+      image: nginx:latest
