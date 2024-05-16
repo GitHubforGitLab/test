@@ -1,9 +1,9 @@
-apiVersion: v1
-kind: Pod
+apiVersion: apps/v1
+kind: Deployment
 metadata:
-  name: ubuntu
-  namespace: app
+  name: nginx
+  namespace: test
 spec:
   containers:
-  - name: ubuntu
-    image: ubuntu:latest
+  - name: nginx
+    image: nginx:latest
