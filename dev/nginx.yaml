@@ -4,6 +4,14 @@ metadata:
   name: nginx
   namespace: test
 spec:
+  selector:
+    matchLabels:
+      app: test
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: test
   spec:
     containers:
     - name: nginx
